@@ -27,31 +27,50 @@
 	margin-top: 16px;
 }
 
-.pulse{
+.pulse {
 	animation: pulse-animation 2s infinite;
 }
 
 @keyframes pulse-animation {
 	0% {
-	  box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.61);
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.61);
 	}
+
 	100% {
-	  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
 	}
-  }
-  
-  @keyframes shake {
-	0% { transform: translateX(0); }
-	25% { transform: translateX(5px); }
-	50% { transform: translateX(-5px); }
-	75% { transform: translateX(5px); }
-	100% { transform: translateX(0); }
-  }
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(5px);
+	}
+
+	50% {
+		transform: translateX(-5px);
+	}
+
+	75% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 600px) {
 	.float {
-		right: 10px; /* Ajusta este valor según tus necesidades */
-		bottom: 20px; /* Ajusta este valor si también deseas cambiar la posición vertical */
+		right: 10px;
+		/* Ajusta este valor según tus necesidades */
+		bottom: 20px;
+		/* Ajusta este valor si también deseas cambiar la posición vertical */
 	}
+
+	
 }

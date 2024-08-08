@@ -194,7 +194,10 @@ body {
     display: flex;
     transform: translateY(0);
     opacity: 1;
+    
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -209,6 +212,9 @@ body {
     .menu-icon {
         display: flex;
     }
+
+
+    
 }
 
 
