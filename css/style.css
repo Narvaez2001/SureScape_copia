@@ -243,7 +243,7 @@ body {
 
 /*contenedor del carrusel*/
 .slider-tarjetas {
-    border: solid 2px red;
+    /*border: solid 2px red;*/
     height: auto;
     width: 100%;
 }
@@ -288,7 +288,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px green;
+    /*border: solid 2px green;*/
     height: 600px;
     width: 100%;
 }
