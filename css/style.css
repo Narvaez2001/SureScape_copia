@@ -241,9 +241,10 @@ body {
     }
 }
 
+/*contenedor del carrusel*/
 .slider-tarjetas {
     border: solid 2px red;
-
+    
     overflow: hidden;
 }
 
@@ -280,6 +281,16 @@ body {
     border-radius: 5px 5px 0px 0px;
     width: 100%;
     height: auto;
+}
+
+/*tarjetas del carrusel de casas*/
+.owl-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px red;
+    height: 600px;
+    width: 100%;
 }
 
 .owl-nav .owl-prev {
