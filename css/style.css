@@ -244,8 +244,8 @@ body {
 /*contenedor del carrusel*/
 .slider-tarjetas {
     border: solid 2px red;
-    
-    overflow: hidden;
+    height: auto;
+    width: 100%;
 }
 
 .slider {
@@ -280,7 +280,7 @@ body {
 .slider-card img {
     border-radius: 5px 5px 0px 0px;
     width: 100%;
-    height: auto;
+    
 }
 
 /*tarjetas del carrusel de casas*/
@@ -289,9 +289,11 @@ body {
     align-items: center;
     justify-content: center;
     border: solid 2px red;
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
+
+
 
 .owl-nav .owl-prev {
     position: absolute;
@@ -330,8 +332,9 @@ body {
 }
 
 /*footer*/
-#footer {
-    padding: 0 0 30px 0;
+
+  #footer {
+    padding:1px;
     color: #d0d0d0;
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.822);
@@ -442,7 +445,6 @@ body {
     float: right;
     text-align: center;
 }
-
 #footer a {
     text-decoration: none;
 }
