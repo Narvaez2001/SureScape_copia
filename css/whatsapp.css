@@ -47,3 +47,11 @@
 	75% { transform: translateX(5px); }
 	100% { transform: translateX(0); }
   }
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+	.float {
+		right: 10px; /* Ajusta este valor según tus necesidades */
+		bottom: 20px; /* Ajusta este valor si también deseas cambiar la posición vertical */
+	}
+}
