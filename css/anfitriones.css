@@ -103,7 +103,7 @@
 
 .anfitriones-text .content-animado::before{
     content: "el primer anfitrion";
-    animation: words 5s infinite;
+    animation: words 4s infinite;
 }
 
 .anfitriones-text .content-animado::after{
