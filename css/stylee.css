@@ -143,8 +143,8 @@ svg{
     .thumbnail{
         justify-content: start;
     }
-    .slider .list .item .content h2{
-        font-size: 40px;
+    .sliderr .list .item .content h2{
+        font-size: 3rem;
     }
 
     .arrows{
@@ -152,8 +152,4 @@ svg{
     }
 }
 
-@media screen and (max-width: 375px){
-    .sliderr .list .item .content p{
-        display: none;
-    }
-}
+
