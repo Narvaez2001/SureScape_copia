@@ -83,7 +83,7 @@ svg{
     position: absolute;
     top: 30%;
     right: 50px;
-    z-index: 100;
+    z-index: 9;
 }
 .arrows button{
     background-color: #eee5;
@@ -106,7 +106,7 @@ svg{
  
     position: absolute;
     bottom: 5px;
-    z-index: 9;
+    z-index: 8;
     display: flex;
     gap: 15px;
     width: 100%;
