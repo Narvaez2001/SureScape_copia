@@ -140,7 +140,8 @@ body {
     top: auto;
     left: 0;
     width: 100%;
-    height: calc(100% - 80px);
+    height: 100vh;
+    /*height: calc(100% - 80px);*/
     background-color: white;
     z-index: 10;
     flex-direction: column;
