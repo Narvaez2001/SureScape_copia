@@ -9,7 +9,9 @@
     align-items: center;
 }
 
-
+.anfitriones-main .name-movil{
+    display: none;
+}
 
 
 .anfitriones{
@@ -216,12 +218,30 @@
     }
 
     .anfitriones .anfitriones-content h3{
-        font-size: 1.5rem;
+        display: none;
     }
 
     
     .anfitriones .anfitriones-content h1{
+        display: none;
+    }
+
+    .anfitriones .anfitriones-content p{
+        font-size: 1rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .anfitriones-main .name-movil{
+        font-weight: 700;
+        display: block;
+        text-align: center;
         font-size: 2rem;
+        margin: 10px 0;
+        background: linear-gradient(90deg, rgba(89, 211, 252, 1) 0%, rgba(85, 77, 222, 1) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
     }
 
     .anfitriones-img{
