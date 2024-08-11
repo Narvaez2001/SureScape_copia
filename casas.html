@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/style_casas.css">
     <link rel="stylesheet" href="./css/whatsapp.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -55,495 +58,408 @@
             </ul>
         </div>
     </header>
-
+    <!---Apartado de casas---->
     <section class="casas">
-        <div class="text-center mb-4">
-            <h1>Casas de Campo</h1>
-        </div>
-        <div class="container my-4">
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- Casa 1 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa1" class="carousel slide" data-bs-touch="true">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa1"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa1"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+        <div class="grid-container">
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="./casa1.html" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
                 </div>
-                <!-- Casa 2 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa2" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa2"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa2"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        <!--  <button class="btn-ver-mas">Ver más</button> -->
+                        
                     </div>
-                </div>
-                <!-- Casa 3 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa3" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa3"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa3"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 4 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa4" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa4"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa4"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 5 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa5" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa5"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa5"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 6 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa6" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa6"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa6"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 7 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa7" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa7"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa7"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 8 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa8" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa8"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa8"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 9 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa9" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa9"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa9"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 10 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa10" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa10"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa10"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 11 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa11" class="carousel slide" data-bs-touch="true">
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa11"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa11"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Casa 12 -->
-                <div class="col">
-                    <div class="card h-100 tarjeta-casa">
-                        <div id="carouselCasa12" class="carousel slide" data-bs-touch="true">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider2.webp" class="d-block w-100" alt="Casa 1 - Imagen 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider3.webp" class="d-block w-100" alt="Casa 1 - Imagen 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./img/slider1.webp" class="d-block w-100" alt="Casa 1 - Imagen 4">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa12"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa12"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Machachi, Ecuador</h5>
-                            <p class="card-text">A 1239 kilómetros de distancia</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="card-text mb-0">S/378 noche</p>
-                                <a href="#" class="btn btn-primary btn-sm">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
             </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+            <!------------------------- Casa de campo ------------------------------------------>
+            <div class="container-casas">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa1.jpg" alt="Casa 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa2.jpg" alt="Casa 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa3.jpg" alt="Casa 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa4.jpg" alt="Casa 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/casas-tarjetas/casa5.jpg" alt="Casa 5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+                <a href="./casa1.html">
+                    <div class="card-content">
+                        <h3 class="house-name">Casa Bella</h3>
+                        <p class="house-location">Ubicación: Lima, Perú</p>
+                        <p class="house-price">Precio: $150,000</p>
+                        
+                    </div>
+                </a>
+            </div>
+
         </div>
+
     </section>
 
     <!---------------------- TODO ESTO ES FOOTER ------------------------->
@@ -623,7 +539,6 @@
         </div>
     </footer>
 
-
     <script>
         // Obteniendo los elementos
         const menuIcon = document.getElementById('menu-icon');
@@ -644,10 +559,12 @@
             }
         });
     </script>
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./js/swiper-casas.js"></script>
 
 </body>
 
