@@ -250,7 +250,8 @@ body {
 /*contenedor del carrusel*/
 .slider-tarjetas {
     /*border: solid 2px red;*/
-    height: auto;
+    margin-top: 80px;
+    height: 700px;
     width: 100%;
 }
 
@@ -337,6 +338,7 @@ body {
 .owl-dots .owl-dot.active {
     background: #554DDE !important;
 }
+
 
 /* Estilo para el contenedor principal */
 
