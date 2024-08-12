@@ -32,14 +32,6 @@
     .grid-container {
         grid-template-columns: 1fr;
     }
-
-    .swiper-button-prev {
-        display: none !important;
-    }
-
-    .swiper-button-next {
-        display: none !important;
-    }
 }
 
 .container-casas {
@@ -72,21 +64,27 @@ a .container-casas:hover {
     cursor: pointer;
 }
 
+.swiper-wrapper{
+    border-radius: 20px !important;
+}
+
+
 .slider-wrapper {
     width: 100%;
     height: 200px;
-    border: solid 2px red !important;
+   
 }
 
 .swiper-slide {
+    
+    border-radius: 20px;
     width: 100%;
     height: 300px;
-    border-radius: 20px;
     overflow: hidden;
 }
 
 .swiper-slide img {
-    border-radius:20px; 
+    border-radius: 20px;
     width: 100%;
     height: 300px;
     object-fit: cover;
