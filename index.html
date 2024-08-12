@@ -129,8 +129,9 @@
                 </div>
                 <!-- button arrows -->
                 <div class="arrows">
-                    <button id="prev"><</button>
-                    <button id="next">></button>
+                    <button id="prev">
+                        <</button>
+                            <button id="next">></button>
                 </div>
                 <!-- thumbnail -->
                 <div class="thumbnail">
@@ -164,15 +165,44 @@
                             Name Slider
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </section>
-        
+
+        <!--Agenda tu cita con nosotros-->
+        <section class="agenda-section">
+            <div class="content-container">
+                <div class="body-agent">
+                    <div class="header-agent">
+                        <div class="movil-title">
+                            <h2 class="title">Agenda tu</h2>    
+                        </div>
+                        <div class="title-centro">
+                                <span class="highlight">Cita</span>
+                        </div>
+                        <div class="title-footer">
+                            <h2 class="small">ó video llamada</h2>
+                        </div>
+                    </div>
+                    
+
+                    <div class="image-container">
+                        <img src="./img/foto-principal.webp" alt="" class="profile-image">
+
+                        <!--<div class="label anfitrion1"><span>Junior</span></div>
+                    <div class="label anfitrion2"><span>Allison</span></div>--->
+                    </div>
+
+                </div>
+                <p class="description">Reserva fácil, rápido & seguro...</p>
+            </div>
+        </section>
+
 
         <!---------------------- TODO ESTO ES CARRUSEL DE CASAS ------------------------->
-        
+
 
         <!---------------------- TODO ESTO ES CARRUSEL DE CASAS ------------------------->
 
@@ -336,13 +366,13 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const floatIcon = document.querySelector('.float');
         const body = document.body;
-    
+
         // Agregando el evento de clic
         menuIcon.addEventListener('click', () => {
             // Alternar clases 'active' y 'open'
             mobileMenu.classList.toggle('active');
             menuIcon.classList.toggle('open');
-    
+
             // Mostrar u ocultar el icono de WhatsApp
             if (menuIcon.classList.contains('open')) {
                 floatIcon.style.display = 'none';
@@ -353,8 +383,8 @@
             }
         });
     </script>
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

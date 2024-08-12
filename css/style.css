@@ -338,6 +338,167 @@ body {
     background: #554DDE !important;
 }
 
+/* Estilo para el contenedor principal */
+
+
+.agenda-section {
+   
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.822); /* Color de fondo */
+    padding: 90px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.body-agent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+
+    .agenda-section{
+        text-align: center;
+        height: 800px;
+    }
+    .body-agent{
+        flex-direction: column;
+    }
+
+    .title-centro .highlight{
+        font-size: 70px;
+        font-weight: 700;
+        
+    }
+
+    .movil-title h2{
+        font-size: 2.5rem;
+    }
+
+    .header-agent {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+       
+    }
+
+    .header-agent .title-footer{
+        transform: none;
+        font-size: 10px;
+    }
+
+    .header-agent .title-centro{
+        transform: none;
+    }
+    .title-centro .highlight{
+        font-size: 50px;
+    }
+    
+    .content-container .description{
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    
+    
+}
+
+/* Estilo para el texto principal */
+.title {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.header-agent{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-centro{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transform: translateX(20%);
+}
+
+.title-footer{
+    transform: translateX(8%);
+}
+
+
+.highlight {
+    font-size: 100px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(89, 211, 252, 1) 0%, rgba(85, 77, 222, 1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.title-footer h2{
+    display: block;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+/* Estilo para la imagen circular */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las etiquetas superpuestas */
+.label {
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.label span{
+    background: linear-gradient(90deg, rgba(89, 211, 252, 1) 0%, rgba(85, 77, 222, 1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 500;
+}
+
+.label.anfitrion1 {
+    bottom: 10px;
+    left: -5%;
+    transform: translateX(-50%);
+}
+
+.label.anfitrion2 {
+    top: 10px;
+    right: -5%;
+    transform: translateX(50%);
+}
+
+/* Estilo para la descripción */
+.description {
+    font-size: 1.2em;
+    margin-top: 60px;
+}
+
+
+
 /*footer*/
 
 #footer {
