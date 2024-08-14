@@ -1,0 +1,260 @@
+.iconos-house {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 87px;
+}
+
+.iconos {
+    padding: 10px;
+}
+
+
+
+.izquierda {
+    background-color: aqua;
+}
+
+.derecha {
+    background-color: blueviolet;
+}
+
+.medio {
+    background-color: brown;
+}
+
+
+@media(max-width:1350px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containeer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containeer .img_container .main_img{
+        width: 100%;
+        /*border: solid 10px yellow ;*/
+    }
+
+    .thumbnail_container {
+        height: 80px;
+        width: 100%;
+
+    }
+
+    .containeer .thumbnail_container .thumbnail {
+        width: 120px;
+        height: 80px;
+    }
+
+    .containeer .thumbnail_container {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .content{
+        width: 100%;
+    }
+    .thumbnail_carrusel{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+
+    .conteent {
+        padding-right: 0;
+      
+      }
+
+    .iconos-house{
+        gap: 70px;
+    }
+
+    
+    
+}
+
+@media(max-width:930px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containeer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containeer .img_container .main_img{
+        width: 100%;
+        /*border: solid 10px yellow ;*/
+    }
+
+    .thumbnail_container {
+        height: 80px;
+        width: 100%;
+
+    }
+
+    .containeer .thumbnail_container .thumbnail {
+        width: 100px;
+        height: 70px;
+    }
+
+    .containeer .thumbnail_container {
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .content{
+        width: 100%;
+    }
+    .thumbnail_carrusel{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .conteent {
+        padding-right: 0;
+      
+      }
+
+    .iconos-house{
+        gap: 70px;
+    }
+
+    
+    
+}
+
+
+@media(max-width:768px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containeer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containeer .img_container .main_img{
+        width: 100%;
+        /*border: solid 10px yellow ;*/
+    }
+
+    .thumbnail_container {
+        height: 80px;
+        width: 100%;
+
+    }
+
+    .containeer .thumbnail_container .thumbnail {
+        width: 120px;
+        height: 80px;
+    }
+
+    .containeer .thumbnail_container {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .content{
+        width: 100%;
+    }
+    .thumbnail_carrusel{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .conteent {
+        padding-right: 0;
+      
+      }
+
+    .iconos-house{
+        gap: 70px;
+    }
+
+    
+    
+}
+
+@media(max-width:480px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containeer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containeer .img_container .main_img{
+        width: 100%;
+    }
+
+    .thumbnail_container {
+        height: 80px;
+        width: 100%;
+
+    }
+
+    .containeer .thumbnail_container .thumbnail {
+        width: 80px;
+        height: 50px;
+    }
+
+    .containeer .thumbnail_container {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .content{
+        width: 100%;
+    }
+    .thumbnail_carrusel{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .conteent {
+        padding-right: 0;
+      
+      }
+
+    .iconos-house{
+        gap: 20px;
+    }
+
+    
+    
+}

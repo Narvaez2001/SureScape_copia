@@ -11,8 +11,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.casa1{
-  margin-top: 60px;
+
+.casa1 {
+  margin-top: 79px;
+  width: 100%;
+  /*border: solid 3px palevioletred;*/
 }
 
 body {
@@ -23,7 +26,9 @@ body {
 }
 
 /* utility  */
-.container {
+.main-casa{
+  width: 100%;
+  height: auto;
   padding: 20px;
 }
 
@@ -103,27 +108,35 @@ p {
 
 /* hero  */
 .hero {
-  height: calc(100vh - 10vh);
+  /*border: solid 3px green;*/
+  width: 100%;
+  height: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap; /* Permite que los elementos se envuelvan */
 }
 
 .conteent {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly ;
+  align-items: center;
+  justify-content: center;
   padding-right: 1rem;
 
 }
-
+.heading-primary{
+  font-size: 2rem;
+}
 .content {
-  flex: 0 0 50%;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-right: 1rem;
+  /*border: solid red 2px;*/
 }
 
 .hero-img {
@@ -224,66 +237,47 @@ p {
   cursor: pointer;
 }
 
-@media(max-width:950px) {
 
-  .hero-img,
-  .sub-nav {
-    display: none;
-  }
 
-  .content {
-    flex: 0 0 100%;
-  }
 
-  .main-nav {
-    width: 100%;
-  }
 
-  .contact-form form {
-    width: 100%;
-  }
+.thumbnail_carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-  .contact-form .row {
-    flex-direction: column;
-  }
+.thumbnail_container{
+  
+  /*border: solid purple 2px;*/
 
-  .contact-form .input100,
-  .contact-form .input50 {
-    width: 100%;
-  }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.containeer {
+  /*border: solid skyblue 2px;*/
+  width: 100%;
+  height: auto;
+  
+}
 
 
 .containeer .img_container {
-  width: 600px;
-  height: 400px;
-  margin-bottom: 20px;    
+  /*border: solid 2px black;*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-
 .containeer .img_container .main_img {
-  width: 48rem;
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
-  object-fit: cover;
+  object-fit: cover !important;
+  max-width: 100%
 }
 
 .containeer .thumbnail_container {
@@ -291,7 +285,7 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  
+
 }
 
 
@@ -310,6 +304,6 @@ p {
 }
 
 .active {
-  opacity:  1 !important;
+  opacity: 1 !important;
   box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
 }
