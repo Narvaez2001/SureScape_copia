@@ -9,7 +9,7 @@
 }
 
 
-
+/*
 .izquierda {
     background-color: aqua;
 }
@@ -21,6 +21,7 @@
 .medio {
     background-color: brown;
 }
+*/
 
 
 @media(max-width:1350px) {
