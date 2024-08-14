@@ -247,10 +247,10 @@ body {
     }
 }
 
-/*contenedor del carrusel*/
+/*contenedor del carrusel de casas destacadas*/
 .slider-tarjetas {
     /*border: solid 2px red;*/
-    margin-top: 80px;
+    margin-top: 40px;
     height: 700px;
     width: 100%;
 }
