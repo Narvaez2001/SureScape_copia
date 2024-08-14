@@ -316,6 +316,7 @@ a {
 }
 .text-ubicacion p{
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .text-ubicacion{
@@ -337,14 +338,26 @@ a {
 iframe {
   border-radius: 20px ;
   transition: 0.3s ease-in-out;
-  width: 400px;
+  width: 600px;
   height: 400px;
   opacity: 0.9
 }
 
-iframe:hover {
-  transform: scale(1.1);
-  opacity: 1;
+iframe:focus {
+  outline: none;
+}
+
+@media(max-width:1000px) {
+  iframe{
+   width: 400px;
+   height: 300px;
+  }
+  iframe:hover{
+   transform: none;
+  }
+  .maps{
+   padding: 20px;
+  }
 }
 
 @media(max-width:768px) {
@@ -355,6 +368,12 @@ iframe:hover {
     .text-ubicacion h2{
       text-align: center;
     }
+
+    iframe{
+      width: 500px;
+      height: 300px;
+     }
+     
 }
 
 @media(max-width:542px) {
@@ -378,6 +397,10 @@ iframe:hover {
   iframe:hover{
    transform: none;
   }
+  .text-ubicacion p{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 }
 
 @media(max-width:480px) {
@@ -387,5 +410,9 @@ iframe:hover {
   }
   iframe:hover{
    transform: none;
+  }
+  .text-ubicacion p{
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
