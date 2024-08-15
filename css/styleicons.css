@@ -1,11 +1,17 @@
 .iconos-house {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 87px;
+    
 }
 
 .iconos {
     padding: 10px;
+}
+
+.boton-pedido{
+    background-color: rgba(0, 0, 0, 0.562);
+    
 }
 
 
@@ -196,7 +202,9 @@
       }
 
     .iconos-house{
-        gap: 70px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        
     }
 
     
@@ -255,7 +263,9 @@
       }
 
     .iconos-house{
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        
     }
 
     

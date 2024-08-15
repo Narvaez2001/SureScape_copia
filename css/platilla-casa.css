@@ -119,6 +119,10 @@ a {
   gap: 40px;
 }
 
+.title-casa{
+  padding: 0;
+}
+
 .heading-primary{
   font-size: 2rem;
 }
@@ -388,6 +392,9 @@ iframe:focus {
 }
 
 @media(max-width:480px) {
+  .title-casa{
+    padding: 16px;
+  }
   iframe{
    width: 300px;
    height: 300px;
