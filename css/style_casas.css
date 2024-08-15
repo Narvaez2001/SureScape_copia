@@ -8,7 +8,7 @@
     background-color: #f8f9fa; /* Color de fondo suave */
     padding: 10px 20px;
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
     margin-bottom: 20px; /* Espacio inferior para separar de la lista de casas */
 }
 
