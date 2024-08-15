@@ -60,6 +60,13 @@
     </header>
     <!---Apartado de casas---->
     <section class="casas">
+        <div class="filtros-container">
+            <div id="filtro-todas" class="filtro-btn">Todas las casas</div>
+            <div id="filtro-10-12" class="filtro-btn">Casas de 10 a 12 personas</div>
+            <div id="filtro-20-30" class="filtro-btn">Casas de 20 a 30 personas</div>
+        </div>
+        
+        
         <div class="grid-container">
             <!------------------------- Casa de campo ------------------------------------------>
             <div class="container-casas">
@@ -96,7 +103,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-filipenses.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -130,7 +137,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-shanti.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -164,7 +171,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-ecoandina.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -198,7 +205,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-reyna.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -232,7 +239,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-reyna2.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -266,7 +273,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-mabe.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -300,7 +307,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-m&b.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -334,7 +341,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-los-anturios.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -368,7 +375,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-linares.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -402,7 +409,7 @@
                 </a>
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-chavarri.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -437,7 +444,7 @@
 
             </div>
             <!------------------------- Casa de campo ------------------------------------------>
-            <div class="container-casas">
+            <div class="container-casas" >
                 <a href="./casas/casa-carballeira.html">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -572,12 +579,21 @@
             }
         });
     </script>
+    <script>
+        document.querySelectorAll('.filtro-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="./js/swiper-casas.js"></script>
+    <script src="./js/filtrado-casas.js"></script>
 
 </body>
 

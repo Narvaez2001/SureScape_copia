@@ -1,12 +1,55 @@
 .casas{
     margin-top: 79px;
 }
+
+.filtros-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los filtros de manera uniforme */
+    background-color: #f8f9fa; /* Color de fondo suave */
+    padding: 10px 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio inferior para separar de la lista de casas */
+}
+
+.filtro-btn {
+    background-color: #ffffff88; /* Color de fondo primario */
+    color: #000000; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer; /* Indicador de interactividad */
+    transition: background-color 0.3s ease; /* Animación de transición */
+}
+
+.filtro-btn:hover {
+    background-color: #35353554; /* Color de fondo al pasar el ratón */
+}
+
+.filtro-btn.active {
+    background-color: #49a1ff; /* Color de fondo cuando el filtro está activo */
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .filtros-container {
+        flex-direction: row; /* Los filtros se apilan en columnas en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+    .filtro-btn {
+        width: 100%; /* Los botones de filtro ocupan todo el ancho */
+        text-align: center; /* Texto centrado */
+        margin-bottom: 10px; /* Espacio inferior entre botones */
+    }
+}
+
 
 @media (max-width: 1200px) {
     .grid-container {
