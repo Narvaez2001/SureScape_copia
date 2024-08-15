@@ -391,6 +391,7 @@ iframe:focus {
 
   .ubicacion{
     flex-direction: column;
+    margin-top: 40px;
   }
   
   .text-ubicacion h2{
