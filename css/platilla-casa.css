@@ -389,6 +389,10 @@ iframe:focus {
   .maps{
     padding: 20px;
   }
+  .text-ubicacion{
+    padding: 0 30px;
+  }
+  
 }
 
 @media(max-width:480px) {
@@ -406,4 +410,8 @@ iframe:focus {
     margin-top: 40px;
     margin-bottom: 30px;
   }
+  .text-ubicacion{
+    padding: 0 30px;
+  }
+  
 }
