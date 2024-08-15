@@ -21,6 +21,15 @@
     font-size: 16px;
     cursor: pointer; /* Indicador de interactividad */
     transition: background-color 0.3s ease; /* Animación de transición */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.filtro-btn p{
+    padding-left: 5px;
+    margin: 0;
 }
 
 .filtro-btn:hover {
@@ -28,7 +37,7 @@
 }
 
 .filtro-btn.active {
-    background-color: #49a1ff; /* Color de fondo cuando el filtro está activo */
+    background-color: #00000018; /* Color de fondo cuando el filtro está activo */
 }
 
 .grid-container {
@@ -70,6 +79,12 @@
 
     .swiper-button-next {
         display: none !important;
+    }
+}
+
+@media (max-width:550px){
+    .filtro-btn span{
+        display: none;
     }
 }
 
