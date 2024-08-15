@@ -5,7 +5,7 @@
 .filtros-container {
     display: flex;
     justify-content: space-around; /* Distribuye los filtros de manera uniforme */
-    background-color: #f8f9fa; /* Color de fondo suave */
+    background-color: #ffffff; /* Color de fondo suave */
     padding: 10px 20px;
     border-radius: 8px; /* Bordes redondeados */
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -13,7 +13,7 @@
 }
 
 .filtro-btn {
-    background-color: #ffffff88; /* Color de fondo primario */
+    background-color: #ffffff; /* Color de fondo primario */
     color: #000000; /* Color del texto */
     border: none; /* Sin borde */
     padding: 10px 15px;
