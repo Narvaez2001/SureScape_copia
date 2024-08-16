@@ -263,41 +263,53 @@ body {
 .slider .owl-item.active.center .slider-card {
     transform: scale(1.1);
     opacity: 1;
-    background: #ff9966;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #554DDE, #59D3FC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
+    color: black;
 }
 
 .slider-card {
-    background: #fff;
+    background: #fffffff1;
     padding: 0px 0px;
     margin: 50px 15px 90px 15px;
-    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Borde suave */
+    border-radius: 10px;
     transform: scale(0.9);
     opacity: 0.5;
     transition: all 0.3s;
-    max-width: 300px;
+    max-width: 330px;
+    object-fit: cover;
     /* Ajusta el ancho máximo de las tarjetas */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12),  /* Sombra más grande y difusa */
+    0 50px 100px rgba(0, 0, 0, 0.15); /* Sombra adicional para el efecto 3D */
+    
 }
 
 .slider-card img {
+    overflow: hidden;
     border-radius: 5px 5px 0px 0px;
     width: 100%;
-    height: 160px;
-    
+    height: 100%;   
 }
+
+.contenedor-img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.defectuoso{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /*tarjetas del carrusel de casas*/
 .owl-item{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*border: solid 2px green;*/
-    height: 600px;
+    height: 550px;
     width: 100%;
 }
 
@@ -322,6 +334,7 @@ body {
 }
 
 .owl-dots {
+    
     text-align: center;
 }
 
@@ -340,14 +353,14 @@ body {
 }
 
 
-/* Estilo para el contenedor principal */
+/* Estilo para el contenedor principal de reserva*/
 
 
 .agenda-section {
-   
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.822); /* Color de fondo */
-    padding: 90px;
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff; /* Color de fondo */
+    padding: 90px 90px 0 90px;
     text-align: center;
     color: white;
     position: relative;
@@ -363,7 +376,8 @@ body {
 
     .agenda-section{
         text-align: center;
-        height: 800px;
+        height: 700px;
+        padding: 40px;
     }
     .body-agent{
         flex-direction: column;
@@ -405,14 +419,58 @@ body {
         font-size: 1.2em;
         margin-top: 10px;
     }
+
+
+    .owl-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+        width: 100%;
+    }
+    
     
     
 }
 
+
+.boton-info{
+    display: inline-flex;  /* Flexbox para centrar el contenido */
+    padding: 10px 20px;  /* Espacio interno del botón */
+    justify-content: center;  /* Centrar el contenido horizontalmente */
+    align-items: center;  /* Centrar el contenido verticalmente */
+    
+    background: linear-gradient(135deg, #88bbff, #3060ff);  /* Fondo con gradiente */
+    color: white;  /* Color del texto */
+    font-size: 18px;  /* Tamaño de la fuente */
+    font-weight: bold;  /* Negrita */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    
+    border: none;  /* Sin borde */
+    border-radius: 30px;  /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra */
+    cursor: pointer;  /* Cursor tipo puntero */
+    
+    transition: all 0.3s ease;  /* Transición suave para efectos */
+}
+
+.boton-info:hover{
+    color: #fff;
+  background: linear-gradient(135deg, #88bbff, #3060ff);  /* Cambio de gradiente al hacer hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra */
+  /*transform: scale(1.05);  /* Agranda ligeramente el botón */
+}
+
 /* Estilo para el texto principal */
+
 .title {
+    color: black;
     font-size: 4em;
     margin-bottom: 10px;
+}
+
+.small{
+    color: black;
 }
 
 .header-agent{
@@ -495,6 +553,7 @@ body {
 
 /* Estilo para la descripción */
 .description {
+    color: black;
     font-size: 1.2em;
     margin-top: 60px;
 }
