@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 87px;
+
     
 }
 
@@ -11,19 +12,6 @@
 
 
 
-/*
-.izquierda {
-    background-color: aqua;
-}
-
-.derecha {
-    background-color: blueviolet;
-}
-
-.medio {
-    background-color: brown;
-}
-*/
 
 
 @media(max-width:1350px) {
