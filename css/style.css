@@ -429,6 +429,7 @@ body {
         width: 100%;
     }
     .slider-card {
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Sombra principal */
         0 20px 40px rgba(0, 0, 0, 0.15); /* Sombra adicional para efecto 3D */
     }
