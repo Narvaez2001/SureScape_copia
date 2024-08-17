@@ -4,7 +4,7 @@ svg{
     width: 25px;
 }
 .slider-principal{
-    margin-top: 60px;
+    margin-top: 79px;
 }
 
 .item{
@@ -140,6 +140,7 @@ svg{
     inset: auto 10px 10px 10px;
 }
 @media screen and (max-width: 678px) {
+    
     .thumbnail{
         justify-content: start;
     }
