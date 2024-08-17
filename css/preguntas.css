@@ -65,6 +65,41 @@
 
 @media (max-width:768px){
     .preguntas-frecuentes {
-        padding: 0 10px 10px 10px;
+        padding: 0 20px 20px 20px;
     }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 130px;
+        margin-bottom: 30px;
+    
+    }
+
+    .question p {
+        font-size: 15px;
+        max-height: 0;
+        opacity: 0;
+        line-height: 1.5;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    .question button {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: #000000;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+
 }
