@@ -43,6 +43,7 @@ h2 {
 }
 
 .estructura-nosotros {
+    width: 100%;
     height: 800px;
     margin-top: 79px;
 
@@ -56,7 +57,7 @@ h2 {
 
 @media(max-width:768px) {
     .banner-nosotros img {
-        width: 80%;
+        width: 90%;
         height: auto;
     }
     .articulos{
