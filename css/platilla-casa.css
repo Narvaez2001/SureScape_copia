@@ -343,6 +343,7 @@ a {
 
 .ubicacion-title{
   display: flex;
+  align-items: center;
 }
 .ubicacion-title h2{
   margin: 0;
@@ -406,6 +407,7 @@ iframe:focus {
   
   .ubicacion-title{
     justify-content: center;
+    align-items: center;
   }
 
   iframe{
