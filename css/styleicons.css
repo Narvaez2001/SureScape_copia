@@ -1,7 +1,10 @@
 .iconos-house {
+    padding: 0  30px;
+    height: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 87px;
+    gap: 5px;
 
     
 }
@@ -16,9 +19,7 @@
 
 @media(max-width:1350px) {
     .hero {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .containeer {
@@ -66,7 +67,12 @@
       }
 
     .iconos-house{
-        gap: 70px;
+        gap: 30px;
+        justify-content: center;
+    }
+    .icon-center{
+        display: flex;
+        justify-content: center;
     }
 
     
@@ -125,7 +131,7 @@
       }
 
     .iconos-house{
-        gap: 70px;
+        gap: 30px;
     }
 
     
@@ -190,7 +196,9 @@
         gap: 10px;
         
     }
-
+    .icon-center{
+        display: block;
+    }
     
     
 }
@@ -248,7 +256,8 @@
 
     .iconos-house{
         grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        gap: 10px;
+        padding: 0 10px 0 30px; 
         
     }
 
